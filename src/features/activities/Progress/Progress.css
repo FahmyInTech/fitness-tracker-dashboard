@@ -1,0 +1,68 @@
+.progress {
+    height: auto;
+    background-color: transparent;
+  }
+  
+  .progress  {
+    align-items: center;
+    margin-top: 25px;
+  }
+  .progress  h2{
+    width: 251px;
+    font-size: 32px;
+    font-weight: bold;
+    margin-bottom: 0;
+  }
+  
+  
+  .progress  p,
+  .histTracke p{
+    color: #544c4cb5;
+    font-weight: 600;
+  } 
+  
+  .progress .list {
+    display: flex;
+    align-items: center;
+  }
+  
+  .progress  ul {
+    display: flex;
+    justify-content: space-between;
+    list-style: none;
+    border: 1px solid #544c4cb5;
+    border-radius: 47px;
+    margin: 0;
+    padding: 0;
+  }
+  
+  .progress  ul li {
+    color: #544c4cb5;
+    padding: 10px 24px;
+    border-radius: 40px;
+  }
+  
+  .progress  ul li:hover{
+    background-color: #329D7F9C;
+    color: #fff;
+  }
+  
+  
+  
+  .progress  i {
+    color: #544c4cb5;
+    border: 1px solid #544c4cb5;
+    border-radius: 47px;
+    font-size: 16px;
+    height: auto;
+    padding: 10px;
+    text-align: center;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-left: 10px;
+  }
+  
+  
+  
+  

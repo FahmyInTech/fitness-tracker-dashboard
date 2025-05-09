@@ -1,43 +1,34 @@
-import express from 'express';
-import cors from 'cors';
-import mongoose from 'mongoose';
-import dotenv from 'dotenv';
-import path from 'path';
-import { fileURLToPath } from 'url';
-
-dotenv.config();
-
-const app = express();
-const PORT = process.env.PORT || 5000;
+const express = require("express")
+const cors = require("cors")
+const app = express()
+const PORT = process.env.PORT || 5000
 
 // Middleware
-app.use(cors());
-app.use(express.json());
+app.use(cors())
+app.use(express.json())
 
-// Database Connection
-mongoose.connect(process.env.MONGODB_URI || 'mongodb://localhost:27017/fitness_dashboard')
-  .then(() => console.log('Connected to MongoDB'))
-  .catch((error) => console.error('MongoDB connection error:', error));
+// Import routes
+const activityRoutes = require("./routes/activities")
+const caloriesRoutes = require("./routes/calories")
+const heartRateRoutes = require("./routes/heartRate")
+const stepsRoutes = require("./routes/steps")
+const trackingRoutes = require("./routes/tracking")
+const messagesRoutes = require("./routes/messages")
 
-// Routes
-import authRoutes from './routes/auth.js';
-import userRoutes from './routes/users.js';
-import activityRoutes from './routes/activities.js';
+// Use routes
+app.use("/api/activities", activityRoutes)
+app.use("/api/calories", caloriesRoutes)
+app.use("/api/heart-rate", heartRateRoutes)
+app.use("/api/steps", stepsRoutes)
+app.use("/api/tracking", trackingRoutes)
+app.use("/api/messages", messagesRoutes)
 
-app.use('/api/auth', authRoutes);
-app.use('/api/users', userRoutes);
-app.use('/api/activities', activityRoutes);
+// Basic route for testing
+app.get("/", (req, res) => {
+  res.send("PrimeFit API is running")
+})
 
-// Serve static assets in production
-if (process.env.NODE_ENV === 'production') {
-  const __dirname = path.dirname(fileURLToPath(import.meta.url));
-  app.use(express.static(path.join(__dirname, '../dist')));
-  
-  app.get('*', (req, res) => {
-    res.sendFile(path.resolve(__dirname, '../dist', 'index.html'));
-  });
-}
-
+// Start server
 app.listen(PORT, () => {
-  console.log(`Server is running on port ${PORT}`);
-}); 
+  console.log(`Server running on port ${PORT}`)
+})

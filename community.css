@@ -1,0 +1,340 @@
+.main{
+    display: flex;
+    margin-left: 20px;
+    gap: 15px;
+}
+.main-menu{
+    font-size: small;
+    color: rgb(168, 160, 160);
+}
+.main i{
+    color:  rgb(168, 160, 160);
+    font-size:7px;
+    margin: 9px 15px;
+}
+h5{
+    font-weight: bold;
+    color: rgb(100, 98, 98);
+    font-size: 1rem;
+}
+.title-box{
+    display: flex;
+    flex-direction: column;
+    margin-left: 20px;
+    margin-top: 10px;
+    width: 95%;
+    height: 10vh;
+    position: relative;
+}
+.title-box .title{
+    font-weight: bold;
+    font-size: 1.5rem;
+}
+.title-box .bio{
+    color:  rgb(168, 160, 160);
+    font-size:15px; 
+}
+.title-box button{
+    padding: 5px 25px;
+    background-color: #3db792cc;
+    position: absolute;
+    color: white;
+    right: 5px;
+    border-radius: 25px;
+    -webkit-border-radius: 25px;
+    -moz-border-radius: 25px;
+    -ms-border-radius: 25px;
+    -o-border-radius: 25px;
+    cursor: pointer;
+    transition: all 0.3s ease-in-out;
+    -webkit-transition: all 0.3s ease-in-out;
+    -moz-transition: all 0.3s ease-in-out;
+    -ms-transition: all 0.3s ease-in-out;
+    -o-transition: all 0.3s ease-in-out;
+}
+.title-box button i{
+    color: white;
+    width: 10px;
+    height: 10px;
+    margin-right:10px ;
+}
+/* #329D7F */
+.title-box button:hover{
+    background-color: #329D7F ;
+}
+.grid-container{
+    width: 100%;
+    height: 60vh;
+    display: grid;
+    /* margin-left: 20px; */
+}
+.st-child{
+    display: flex;
+    flex-direction: column;
+    width: 95%;
+    height: 30vh;
+    overflow-y: scroll;
+    margin:0.5% 2%;
+    border-radius: 15px;
+    -webkit-border-radius: 15px;
+    -moz-border-radius: 15px;
+    -ms-border-radius: 15px;
+    -o-border-radius: 15px;
+    box-shadow: 0 0 2px 0 rgba(182, 178, 178, 0.728);
+}
+.mix-container{
+    display: flex;
+    width: 95%;
+    height: 33vh;
+    gap: 2%;
+    margin:1% 2%;
+}
+.nd-child,
+.rd-child{
+    width: 49%;
+    padding: 5px;
+    border-radius: 15px;
+    -webkit-border-radius: 15px;
+    -moz-border-radius: 15px;
+    -ms-border-radius: 15px;
+    -o-border-radius: 15px;
+    box-shadow: 0 0 2px 0 rgba(182, 178, 178, 0.728);
+}
+.friend-span{
+    font-size: 1.1rem;
+    font-weight:600;
+    margin: 2px 8%;
+}
+.progresss{
+    color: grey;
+    display: flex;
+    margin-top: 5px;
+    justify-content: space-around;
+    width: 100%;
+}
+.name{
+    width: 25%;
+    height: fit-content;
+    display: flex;
+    flex-direction: column;
+}
+.name .user{
+    display:flex ;
+    width: 100%;
+}
+.name .user img{
+    width: 15%;
+    height: auto;
+    margin: 2px 3px;
+}
+.name .user span{
+    color: black;
+    font-weight: 600px;
+    margin-top: 10px;
+}
+.steps {
+    display: flex;
+    flex-direction: column;
+    width: 25%;
+    max-width: 300px;
+    font-family: Arial, sans-serif;
+    gap: 12px;
+}
+
+.steps > span {
+    font-size: 14px;
+    margin-bottom: 4px;
+}
+
+.step {
+    display: flex;
+    flex-direction: column;
+    gap: 4px;
+}
+
+.percent {
+    font-size: 10px;
+    color: #555;
+    margin-left: 0;
+}
+
+.track {
+    width: 50%; 
+    height: 5px;
+    background-color: #9ecdbf6e;
+    border-radius: 25px;
+    overflow: hidden;
+}
+
+.track .bar1 {
+    width: 50%;
+    height: 100%;
+    background-color: #329D7F;
+    border-radius: 25px;
+    display: block;
+}
+
+.track .bar2 {
+    width: 75%;
+    height: 100%;
+    background-color: #329D7F;
+    border-radius: 25px;
+    display: block;
+}
+
+.track .bar3 {
+    width: 15%;
+    height: 100%;
+    background-color: #329D7F;
+    border-radius: 25px;
+    display: block;
+}
+.lweight{
+    display: flex;
+    flex-direction: column;
+    width: 25%;
+    gap: 10px;
+}
+.lweight .weight{
+    display: flex;
+    text-align: center;
+    align-items: center;
+}
+.lweight .weight span{
+    width:42%;
+    font-size: 13px;
+    height: fit-content;
+    padding: 5px;
+    background-color: #9ecdbf6e;
+    border-radius: 5px;
+    -webkit-border-radius: 5px;
+    -moz-border-radius: 5px;
+    -ms-border-radius: 5px;
+    -o-border-radius: 5px;
+}
+.drink{
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+    color: #329D7F;
+    font-size: smaller;
+    font-weight:500;
+}
+.drink span:first-child{
+    color:  rgb(146, 139, 139);
+    font-size:15px;
+    font-weight: 400;
+}
+
+.coach-span,
+.suggest-span{
+    margin: 8px 8%;
+    font-size: 1.1rem;
+    font-weight:600;
+}
+.coaches{
+    display: flex;
+    width: 100%;
+    justify-content: center;
+    align-items: center;
+}
+.coach{
+    width: 30%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+.coach img{
+    width: 40%;
+    height: 15vh;
+}
+.coach h4{
+    font-size: 15px;
+}
+.coach span{
+    color: #807979a5;
+    font-size: 11px;
+    font-weight:600;
+}
+.coach button,
+.friend button{
+    width: 60px;
+    padding: 5px;
+    height:fit-content;
+    background-color: #3db792cc;
+    color: aliceblue;
+    font-weight: bold;
+    font-size: 10px;
+    margin-top: 5px;
+    border-radius: 25px;
+    -webkit-border-radius: 25px;
+    -moz-border-radius: 25px;
+    -ms-border-radius: 25px;
+    -o-border-radius: 25px;
+    transition: all 0.3s ease-in-out;
+    -webkit-transition: all 0.3s ease-in-out;
+    -moz-transition: all 0.3s ease-in-out;
+    -ms-transition: all 0.3s ease-in-out;
+    -o-transition: all 0.3s ease-in-out;
+}
+.coaches .coach:first-child button,
+.friend:last-child button{
+    width: 60px;
+    padding: 5px;
+    height:fit-content;
+    background-color: #c7d1ce;
+    color: aliceblue;
+    font-weight: bold;
+    font-size: 10px;
+    margin-top: 5px;
+    border-radius: 25px;
+    -webkit-border-radius: 25px;
+    -moz-border-radius: 25px;
+    -ms-border-radius: 25px;
+    -o-border-radius: 25px;
+}
+.coach button:hover,
+.friend button:hover{
+    background-color: #329D7F ;
+}
+.friends{
+    display: flex;
+    flex-direction: column;
+    gap: 5px;
+}
+.friend{
+    display: flex;
+    width: 100%;
+}
+.friend img{
+    width: 8%;
+    height: 40px;
+}
+.friend .friendBio{
+    width: 75%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items:flex-start;
+    margin-left: 20px;
+}
+.friend .friendBio h5{
+    margin-top: 5px;
+    font-size: 13px;
+    color: black;
+}
+.friend .friendBio span{
+    font-size: 13px;
+    color: rgba(138, 136, 136, 0.744);
+    font-weight: 600;
+}
+.community{
+    position: absolute;
+    width: 90px;
+    height: 90px;
+    bottom: 20px;
+    z-index: 1000;
+    left:55px;
+}
+

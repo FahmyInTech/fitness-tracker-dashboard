@@ -59,9 +59,9 @@ const Sidebar = () => {
   );
 
  
-  useEffect(() => {
+  // useEffect(() => {
 
-  }, [isDarkMode]);
+  // }, [isDarkMode]);
 
   return (
     <div className={`w-58 h-screen shadow-sm p-4 flex flex-col justify-between border ${

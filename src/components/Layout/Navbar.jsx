@@ -52,7 +52,7 @@ const Navbar = () => {
       });
       
       if (!found) {
-        alert('No matching headings found');
+        alert('Not found');
       }
     }
   };
